@@ -1,0 +1,11 @@
+version: "3"
+services:
+  node-install:
+    build:
+      dockerfile: Dockerfile-install
+      context: .
+    image: alexsimons/nodeinstall
+    volumes:
+      - .:/app
+
+#runs the node install

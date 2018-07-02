@@ -1,0 +1,7 @@
+version: "3"
+services:
+  web-service:
+    build: ./
+    ports:
+      - 9966:9966
+    image: alexsimons/saga-web-content:1.0.0
